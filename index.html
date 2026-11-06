@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dseguro Ltda | Asesoría y Corretaje de Seguros</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B192C',
+                        secondary: '#1E3E62',
+                        accent: '#00B4D8',
+                        accentHover: '#0096C7',
+                        lightBg: '#F8FAFC',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0B192C 0%, #1E3E62 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-accent selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        D
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-extrabold tracking-tight text-primary">DSEGURO<span class="text-accent font-light">LTDA</span></span>
+                        <span class="text-[10px] uppercase tracking-wider text-slate-500 font-medium">Corredores de Seguros</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                    <a href="#inicio" class="hover:text-accent transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-accent transition-colors">Servicios</a>
+                    <a href="#cotizador" class="hover:text-accent transition-colors">Cotizador</a>
+                    <a href="#nosotros" class="hover:text-accent transition-colors">Por qué Elegirnos</a>
+                    <a href="#testimonios" class="hover:text-accent transition-colors">Testimonios</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="https://wa.me/573000000000?text=Hola,%20deseo%20más%20información%20sobre%20sus%20seguros" target="_blank" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all text-sm">
+                        <i data-lucide="message-circle" class="w-4 h-4"><span></span></i>
+                        <span>Asesoría WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"><span></span></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Modal -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="block py-2 text-slate-700 font-medium hover:text-accent">Inicio</a>
+            <a href="#servicios" class="block py-2 text-slate-700 font-medium hover:text-accent">Servicios</a>
+            <a href="#cotizador" class="block py-2 text-slate-700 font-medium hover:text-accent">Cotizador</a>
+            <a href="#nosotros" class="block py-2 text-slate-700 font-medium hover:text-accent">Por qué Elegirnos</a>
+            <a href="#testimonios" class="block py-2 text-slate-700 font-medium hover:text-accent">Testimonios</a>
+            <div class="pt-2">
+                <a href="https://wa.me/573000000000?text=Hola,%20deseo%20más%20información%20sobre%20sus%20seguros" target="_blank" class="flex items-center justify-center gap-2 w-full bg-emerald-600 text-white font-semibold py-3 rounded-xl shadow">
+                    <i data-lucide="message-circle" class="w-4 h-4"><span></span></i>
+                    <span>Asesoría WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-40 md:pb-32 hero-gradient text-white overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-1/4 -mb-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-accent text-xs font-semibold uppercase tracking-wider">
+                        <i data-lucide="shield-check" class="w-4 h-4"><span></span></i>
+                        <span>Tu tranquilidad y patrimonio asegurados</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Protegemos lo que más amas, <span class="text-accent">hoy y siempre.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal">
+                        Asesoría experta y corretaje de seguros empresariales y personales. Te acompañamos a elegir las mejores coberturas con respaldo de aseguradoras líderes.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#cotizador" class="w-full sm:w-auto bg-accent hover:bg-accentHover text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3 text-base">
+                            <i data-lucide="calculator" class="w-5 h-5"><span></span></i>
+                            <span>Cotiza tu Seguro</span>
+                        </a>
+                        <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-md border border-white/20 transition-all flex items-center justify-center gap-3 text-base">
+                            <i data-lucide="instagram" class="w-5 h-5 text-pink-400"><span></span></i>
+                            <span>Ver Instagram</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Trust badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-6 border-t border-white/10 text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">+15</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Años de experiencia</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-accent">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Asesoría imparcial</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">24/7</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Soporte en siniestros</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Card / Mockup -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-white/10 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-white/20 shadow-2xl">
+                        <div class="absolute -top-4 -right-4 bg-accent text-white p-3 rounded-2xl shadow-lg">
+                            <i data-lucide="shield" class="w-8 h-8"><span></span></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Asesoría Personalizada</h3>
+                        <p class="text-sm text-slate-300 mb-6">Analizamos tus riesgos y diseñamos un plan a tu medida con las mejores tarifas.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-3 rounded-2xl bg-white/5 border border-white/10">
+                                <div class="p-2 rounded-xl bg-accent/20 text-accent">
+                                    <i data-lucide="briefcase" class="w-5 h-5"><span></span></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Seguros Empresariales</h4>
+                                    <p class="text-xs text-slate-400">Pymes, Responsabilidad Civil, Copropiedades</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4 p-3 rounded-2xl bg-white/5 border border-white/10">
+                                <div class="p-2 rounded-xl bg-accent/20 text-accent">
+                                    <i data-lucide="heart-pulse" class="w-5 h-5"><span></span></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Vida y Salud</h4>
+                                    <p class="text-xs text-slate-400">Pólizas de salud global y protección familiar</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-3 rounded-2xl bg-white/5 border border-white/10">
+                                <div class="p-2 rounded-xl bg-accent/20 text-accent">
+                                    <i data-lucide="car" class="w-5 h-5"><span></span></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Automóviles y Hogar</h4>
+                                    <p class="text-xs text-slate-400">Todo riesgo vehicular y protección patrimonial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                            <span class="text-xs text-slate-300 font-medium">¿Tienes dudas? Escríbenos</span>
+                            <a href="https://wa.me/573000000000" target="_blank" class="text-xs font-bold text-accent hover:underline flex items-center gap-1">
+                                Chatear ahora <i data-lucide="arrow-right" class="w-3 h-3"><span></span></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent font-semibold text-sm uppercase tracking-wider">Nuestras Soluciones</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-2">Seguros diseñados para cada etapa de tu vida y negocio</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">Trabajamos con las aseguradoras más sólidas para ofrecerte el respaldo que mereces con coberturas óptimas.</p>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-accent flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                            <i data-lucide="heart-pulse" class="w-7 h-7"><span></span></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Seguros de Vida y Salud</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Protege el bienestar físico y financiero de tu familia ante cualquier imprevisto médico o eventualidad.</p>
+                    </div>
+                    <a href="#cotizador" onclick="selectServiceType('salud')" class="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                        <span>Cotizar seguro</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"><span></span></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-accent flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                            <i data-lucide="briefcase" class="w-7 h-7"><span></span></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Seguros para Empresas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Soluciones integrales para Pymes, responsabilidad civil, cumplimiento, copropiedades y riesgos laborales.</p>
+                    </div>
+                    <a href="#cotizador" onclick="selectServiceType('empresa')" class="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                        <span>Cotizar seguro</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"><span></span></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-accent flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                            <i data-lucide="car" class="w-7 h-7"><span></span></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Autos y Flotas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Pólizas todo riesgo para vehículos particulares y flotas corporativas con asistencia vial de primer nivel.</p>
+                    </div>
+                    <a href="#cotizador" onclick="selectServiceType('auto')" class="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                        <span>Cotizar seguro</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"><span></span></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blue-50 text-accent flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                            <i data-lucide="home" class="w-7 h-7"><span></span></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Hogar y Patrimonio</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">Protege tu vivienda, bienes y patrimonio ante incendios, robos, terremotos y daños accidentales.</p>
+                    </div>
+                    <a href="#cotizador" onclick="selectServiceType('hogar')" class="inline-flex items-center gap-2 text-accent font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                        <span>Cotizar seguro</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"><span></span></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Widget -->
+    <section id="cotizador" class="py-20 bg-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#00B4D8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-accent font-semibold text-sm uppercase tracking-wider">Simulador Express</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Cotizador Interactivo de Seguros</h2>
+                <p class="text-slate-300 mt-3 text-sm sm:text-base">Selecciona el tipo de seguro y personaliza tus opciones para recibir una estimación preliminar y atención prioritaria.</p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-6 sm:p-10 rounded-3xl shadow-2xl">
+                <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Select Type -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">Tipo de Seguro</label>
+                            <select id="insurance-type" class="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors">
+                                <option value="salud" class="bg-primary text-white">Seguro de Vida y Salud</option>
+                                <option value="empresa" class="bg-primary text-white">Seguro para Empresas / Pymes</option>
+                                <option value="auto" class="bg-primary text-white">Seguro de Automóviles</option>
+                                <option value="hogar" class="bg-primary text-white">Seguro de Hogar</option>
+                            </select>
+                        </div>
+
+                        <!-- Full Name -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">Nombre Completo</label>
+                            <input type="text" id="quote-name" required placeholder="Ej. Camila Torres" class="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">Correo Electrónico</label>
+                            <input type="email" id="quote-email" required placeholder="correo@ejemplo.com" class="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent transition-colors">
+                        </div>
+
+                        <!-- Phone / WhatsApp -->
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-200 mb-2">Teléfono / WhatsApp</label>
+                            <input type="tel" id="quote-phone" required placeholder="+57 300 000 0000" class="w-full bg-slate-900/60 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-accent transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Coverage Range Slider -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-sm font-semibold text-slate-200">Cobertura Aproximada Deseada</label>
+                            <span id="coverage-val" class="text-accent font-bold text-lg">$50.000.000 COP</span>
+                        </div>
+                        <input type="range" id="coverage-slider" min="10000000" max="500000000" step="10000000" value="50000000" oninput="updateSliderVal(this.value)" class="w-full accent-accent bg-slate-700 h-2 rounded-lg cursor-pointer">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>$10M COP</span>
+                            <span>$250M COP</span>
+                            <span>$500M+ COP</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="text-xs text-slate-300 flex items-center gap-2">
+                            <i data-lucide="shield-alert" class="w-4 h-4 text-accent"><span></span></i>
+                            <span>Tus datos son totalmente confidenciales y seguros.</span>
+                        </div>
+                        <button type="submit" class="w-full sm:w-auto bg-accent hover:bg-accentHover text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                            <span>Solicitar Cotización Express</span>
+                            <i data-lucide="send" class="w-4 h-4"><span></span></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Alert Box (Hidden by default) -->
+                <div id="quote-success" class="hidden mt-6 p-6 rounded-2xl bg-emerald-900/80 border border-emerald-500 text-center space-y-3">
+                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto">
+                        <i data-lucide="check" class="w-6 h-6"><span></span></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">¡Cotización Solicitada con Éxito!</h3>
+                    <p class="text-sm text-emerald-100 max-w-lg mx-auto">Un asesor especialista de Dseguro Ltda se pondrá en contacto contigo en breve para entregarte opciones personalizadas.</p>
+                    <button onclick="resetQuoteForm()" class="text-xs font-semibold underline text-emerald-200 hover:text-white">Cotizar otro seguro</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-accent font-semibold text-sm uppercase tracking-wider">Por qué Elegirnos</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-primary">Tu tranquilidad es nuestra razón de ser</h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        En Dseguro Ltda no solo vendemos pólizas; construimos relaciones de confianza a largo plazo. Analizamos el mercado de forma objetiva para recomendarte la alternativa que mejor se adapte a tus necesidades y presupuesto.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 rounded-xl bg-blue-50 text-accent mt-1">
+                                <i data-lucide="users" class="w-6 h-6"><span></span></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-primary">Asesoría 100% Personalizada</h3>
+                                <p class="text-sm text-slate-600">Un corredor experto te acompaña paso a paso desde la selección hasta la emisión.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 rounded-xl bg-blue-50 text-accent mt-1">
+                                <i data-lucide="headphones" class="w-6 h-6"><span></span></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-primary">Acompañamiento en Siniestros 24/7</h3>
+                                <p class="text-sm text-slate-600">Estamos contigo cuando más lo necesitas, gestionando tus reclamaciones de forma ágil.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="p-2 rounded-xl bg-blue-50 text-accent mt-1">
+                                <i data-lucide="award" class="w-6 h-6"><span></span></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-primary">Respaldo con Aseguradoras Líderes</h3>
+                                <p class="text-sm text-slate-600">Alianzas estratégicas con las compañías más sólidas y confiables del sector asegurador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-gradient-to-tr from-secondary to-primary p-8 text-white">
+                        <div class="absolute top-0 right-0 p-8 opacity-10">
+                            <i data-lucide="shield-check" class="w-64 h-64"><span></span></i>
+                        </div>
+                        <div class="relative z-10 space-y-6">
+                            <span class="px-3 py-1 bg-accent/30 text-accent text-xs font-bold rounded-full uppercase tracking-wider">Compromiso Dseguro</span>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold leading-snug">"Nuestra meta es que te sientas respaldado antes, durante y después de cualquier eventualidad."</h3>
+                            <div class="pt-4 flex items-center gap-4 border-t border-white/10">
+                                <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center font-bold text-lg">
+                                    DS
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white">Equipo Directivo</h4>
+                                    <p class="text-xs text-slate-300">Dseguro Ltda - Corredores de Seguros</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-accent font-semibold text-sm uppercase tracking-wider">Testimonios</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-2">Lo que dicen nuestros clientes</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">Historias reales de personas y empresas que confían en nuestra asesoría.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            "Excelente atención y asesoría para nuestra empresa. Encontramos la póliza perfecta para nuestras Pymes con un ahorro significativo y un respaldo inigualable."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 text-primary font-bold flex items-center justify-center">
+                            MR
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-primary">Mauricio Ramírez</h4>
+                            <p class="text-xs text-slate-500">Gerente de Empresa Logística</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            "Tener mi seguro de salud y vehículo con Dseguro Ltda me da absoluta tranquilidad. Cuando tuve un choque menor, su equipo me guio paso a paso de inmediato."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 text-primary font-bold flex items-center justify-center">
+                            AL
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-primary">Andrea López</h4>
+                            <p class="text-xs text-slate-500">Independiente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"><span></span></i>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            "Los encontré en Instagram y desde el primer mensaje la atención fue impecable. Me ayudaron a cotizar y emitir el seguro de mi hogar sin complicaciones."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 text-primary font-bold flex items-center justify-center">
+                            CG
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-primary">Carlos Gómez</h4>
+                            <p class="text-xs text-slate-500">Propietario de Vivienda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Banner / Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary via-secondary to-primary text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+            <div class="w-16 h-16 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mx-auto text-pink-400 shadow-lg">
+                <i data-lucide="instagram" class="w-8 h-8"><span></span></i>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold">Síguenos en Instagram para tips y asesoría diaria</h2>
+            <p class="text-slate-300 max-w-xl mx-auto text-sm sm:text-base">Únete nuestra comunidad en <strong class="text-white">@dseguro_ltda</strong> y entérate de las mejores recomendaciones de protección y seguros.</p>
+            <div>
+                <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition-all text-base">
+                    <i data-lucide="instagram" class="w-5 h-5"><span></span></i>
+                    <span>Visitar @dseguro_ltda</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-slate-400 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-accent flex items-center justify-center text-white font-bold text-lg">
+                            D
+                        </div>
+                        <span class="text-xl font-extrabold text-white tracking-tight">DSEGURO<span class="text-accent">LTDA</span></span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Corredores de seguros comprometidos con tu seguridad financiera y protección patrimonial.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-accent text-white flex items-center justify-center transition-colors">
+                            <i data-lucide="instagram" class="w-4 h-4"><span></span></i>
+                        </a>
+                        <a href="https://wa.me/573000000000" target="_blank" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center transition-colors">
+                            <i data-lucide="message-circle" class="w-4 h-4"><span></span></i>
+                        </a>
+                        <a href="mailto:contacto@dseguro.com" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-blue-600 text-white flex items-center justify-center transition-colors">
+                            <i data-lucide="mail" class="w-4 h-4"><span></span></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-bold text-base">Enlaces Rápidos</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="hover:text-accent transition-colors">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Nuestros Servicios</a></li>
+                        <li><a href="#cotizador" class="hover:text-accent transition-colors">Cotizador Interactivo</a></li>
+                        <li><a href="#nosotros" class="hover:text-accent transition-colors">Por qué Elegirnos</a></li>
+                        <li><a href="#testimonios" class="hover:text-accent transition-colors">Testimonios</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-bold text-base">Tipos de Seguros</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Seguros de Vida y Salud</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Seguros para Empresas y Pymes</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Seguros de Automóviles</a></li>
+                        <li><a href="#servicios" class="hover:text-accent transition-colors">Seguros de Hogar y Patrimonio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-bold text-base">Contacto Directo</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-4 h-4 text-accent"><span></span></i>
+                            <span>+57 (300) 000-0000</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-4 h-4 text-accent"><span></span></i>
+                            <span>contacto@dseguro.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-accent"><span></span></i>
+                            <span>Bogotá, Colombia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Dseguro Ltda. Todos los derechos reservados. Corredores de Seguros autorizados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-300">Política de Privacidad</a>
+                    <a href="#" class="hover:text-slate-300">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactive Logic -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Slider value formatter
+        function updateSliderVal(val) {
+            const formatted = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', maximumFractionDigits: 0 }).format(val);
+            document.getElementById('coverage-val').innerText = formatted;
+        }
+
+        // Quick select service helper from cards
+        function selectServiceType(type) {
+            const select = document.getElementById('insurance-type');
+            if(select) {
+                select.value = type;
+            }
+        }
+
+        // Handle Quote Submission
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('quote-form');
+            const successBox = document.getElementById('quote-success');
+
+            // Hide form and show success box
+            form.classList.add('hidden');
+            successBox.classList.remove('hidden');
+
+            // Re-initialize icons inside success box
+            lucide.createIcons();
+        }
+
+        // Reset Quote Form
+        function resetQuoteForm() {
+            const form = document.getElementById('quote-form');
+            const successBox = document.getElementById('quote-success');
+
+            form.reset();
+            successBox.classList.add('hidden');
+            form.classList.remove('hidden');
+            updateSliderVal(50000000);
+        }
+    </script>
+</body>
+</html>
